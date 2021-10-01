@@ -1,0 +1,32 @@
+Durée : 00:53
+Remarque : Une fonction pop (x1::x2::x3....xn::[]) = (x1 + x2)::x3:..xn::[]
+
+Durée : 02:09
+Remarque : (pop []) = []
+(pop x::[]) = x::[]
+(pop x::y::ys) = (x+y) :: ys
+
+Durée : 03:26
+Remarque : let pop (l : int list) : int list
+match l with 
+|[] ->[]
+|x::xs -> 
+      (match xs with
+          |[] -> x :: []
+          |y::ys -> (x + y)::ys)
+
+Durée : 06:00
+Remarque : Pour minimiser la fonction :
+let fonction (l : int list) : int list =
+match l with 
+|[] -> []
+|x::[] -> x::[]
+| x::(y :: ys) -> (x + y) :: ys
+
+Durée : 07:51
+Remarque : Pour minimiser encore plus : 
+let pop (l :int list) : int list =
+match l with
+|x :: (y :: ys) -> (x+y) :: ys
+| _ -> l
+

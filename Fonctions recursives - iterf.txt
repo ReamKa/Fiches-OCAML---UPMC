@@ -1,0 +1,24 @@
+Durée : 03:45
+Remarque : (iter.f f n x) est une fonction f qui se repete n fois sur x
+
+Durée : 03:45
+Remarque : De type : ('a -> 'a) -> int -> 'a -> 'a
+
+Durée : 05:55
+Remarque : let rec iter.f (f : 'a -> 'a) (n : int) (x : 'a) : 'a =
+if n = 0 then x
+else (f (iter.f f (n-1) x))
+
+Durée : 06:44
+Remarque : Elle n'est pas recursive terminale car elle ne depend pas d'iter.f seulement mais de l'application f avant
+
+Durée : 07:17
+Remarque : let pow (x : int) (n : int) : int =
+iter.f (fun y -> y*x) n 1
+
+Durée : 11:53
+Remarque : Pour la rendre recursive terminale :
+let rec iter.f2 (f : 'a -> 'a) (n : int) (x : 'a) : 'a =
+if n = 0
+else iter.f2 f (n-1) (f x)
+

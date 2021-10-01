@@ -1,0 +1,26 @@
+Durée : 01:45
+Remarque : Autre manière d'écrire une liste : [x1; x2; x3]
+
+Durée : 02:13
+Remarque : Append concatene 2 listes ensemble
+
+Durée : 02:29
+Remarque : exemple de (app [x1;...xn] [y1;...;yn] = [x1;...xn;y1...;yn]
+
+Durée : 05:03
+Remarque : Les listes ne sont pas polymorphes : elles contiennent les memes types 
+
+let rec app( l: 'a list) (l': 'a list) : 'a list =
+   match l with
+   | [] -> l'
+   | x :: xs -> x :: (app xs l')
+
+Durée : 10:21
+Remarque : dans la librairie standard elle existe deja et s'apelle en utilisant @.
+ex : [1 ; 2] @ [3 ; 4] = [1 ; 2; 3; 4]
+
+Durée : 11:17
+Remarque : Attention à ne pas confondre @ et :: ! 
+:: ajoute un element en tete de liste alors que @ concatene 2 liste. 
+De plus, :: prend un 'a et l'ajoute à une 'a list. Alors que @ prend une 'a list et l'ajoute à une 'a list
+

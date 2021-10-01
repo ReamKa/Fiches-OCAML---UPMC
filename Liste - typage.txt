@@ -1,0 +1,48 @@
+Durée : 00:21
+Remarque : Typage :
+
+Durée : 00:35
+Remarque : les deux points de 'x::xs' se nomment "cons"
+
+Durée : 01:51
+Remarque : Liste d'entiers : int list
+
+Durée : 02:00
+Remarque : Liste vide : pour exprimer le fait qu'elle peut contenir n'importer quel type de types. On la nomme : [] : 'a list
+
+Durée : 02:59
+Remarque : Si on regarde :: comme étant une fonction : c'est une fonction de 2 argument qui prend un argument x et une liste sx
+
+Durée : 05:26
+Remarque : :: : 'a -> 'a list -> 'a list
+
+Durée : 06:01
+Remarque : Exemple :
+- [] 'a list
+- 1::[] : int list
+1 est un int, et [] est une 'a list. Pour que les arguments coincident, le typage résultant est : int -> int list -> list
+
+- true :: (1::[]).
+1::[] est une int list. Et true un bool. Comme le premier argument est un bool et le deuxieme un int list, il y a echec d'evaluation : mauvais typage
+
+Durée : 12:58
+Remarque : [] :: [] avec les types des listes : 'b list :: 'a list
+
+Durée : 13:18
+Remarque : On prend pour premier argument une 'b list et en deuxieme une 'a list renommée en 'b list. Cela donne donc une liste qui prend une liste
+
+Durée : 13:18
+Remarque : Soit []::[] : ('b list) list
+
+Durée : 13:23
+Remarque : - (1 :: []) :: [] ou on essaye de mettre une liste en tete d'une liste
+
+Durée : 13:56
+Remarque : int list :: 'a list
+
+Durée : 14:10
+Remarque : le premier argument est un int list
+
+Durée : 14:39
+Remarque : soit le type donné est : (int list) list
+

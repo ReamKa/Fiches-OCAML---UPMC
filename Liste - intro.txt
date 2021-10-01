@@ -1,0 +1,15 @@
+Durée : 05:15
+Remarque : Cas de base : liste vide
+
+Durée : 06:57
+Remarque : Pour une liste vide : []
+
+Durée : 07:05
+Remarque : Pour un element (x) suivi d'une liste (xs) : x :: xs
+
+Durée : 07:47
+Remarque : Exemple de creation de liste :
+- []
+- x = 1 /// : xs = [] ///1::[] <- ma liste
+- x = 2 //// xs = 1 :: [] ///  2 ::1::[] <- ma liste
+

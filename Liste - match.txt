@@ -1,0 +1,12 @@
+Durée : 02:11
+Remarque : Les seuls constructeurs de type list : la liste vide ou l'element x en tete d'une liste xs (x::xs)
+
+Durée : 09:22
+Remarque : On peut faire les matchs en utilisant les constructeurs
+
+Durée : 09:50
+Remarque : La variable des constructeurs ne sont là que pour nommer certains elements des liste
+
+Durée : 10:12
+Remarque : Rien à voir avec les variables initialisées dans les autres langages
+

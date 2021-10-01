@@ -1,0 +1,20 @@
+Durée : 00:08
+Remarque : List.mem est une fonction qui teste si un element appartient à une liste.
+
+ex : List.mem 1 [1;2] -> true
+
+List.mem prend 2 arguments et renvoie un bool: 
+'a -> 'a list -> bool
+
+Durée : 02:23
+Remarque : let rec mem (x: 'a) (l: 'a list) : bool =
+  match l with 
+   | [] -> false 
+   | y :: ys -> if (x = y) then true else (mem x ys)
+
+Durée : 06:25
+Remarque : let rec mem2 (x: 'a) (l: 'a list) : bool =
+match l with
+| [] -> false
+| y :: ys -> (x = y) ||(mem2 x ys)
+
